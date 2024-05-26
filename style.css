@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+.carousel-item{
+    background-color: black;
+
+}
+.main_logo{
+    width: 124px;
+    /* padding-top: 30px; */
+    height: auto;
+
+    margin-right: 25px;
+    /* display: flex;
+    align-items: center; */
+}
+.nav_elem{
+    display: inline-block;
+    list-style-type:none;
+    font-family: "Open Sans", sans-serif;
+    /* font-weight: 600; */
+    
+    font-size: 16px;
+    text-transform: uppercase;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.nav_link{
+    display: flex;
+    align-items: center;
+    color: #333333;
+    height: 60px;
+}
+
+.navbar_flex_container{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    max-width: 1220px;
+}
+
+.dnd_navbar{
+    z-index: 5;
+    position: fixed;
+    margin-top: -60px;
+    background-color: #E7E7D8;
+    border-bottom: 4px solid #9d0a0e;
+    width: 100vw;
+    
+}
+.logo_links{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* margin-right: auto; */
+
+}
+.location_sign{
+    margin-left: auto;
+    font-family: 'DIN';
+    /* font-family: ; */
+}
+
+
+.location_sign_elem{
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    height: 50px;
+    
+}
+
+.dnd_ddb_logo{
+    height: 24px;
+    width: auto;
+}
+
+
+#carouselExampleIndicators{
+    position: relative;
+    width: 100%;
+    height: 550px;
+    margin-top: 60px;
+}
+
+.carousel-item{
+    height: 550px;
+    padding-bottom: 500px;
+    position: relative;
+}
+
+.cards_grid{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.card{
+    /* padding: 50px; */
+    height: 369px;
+    /* border-bottom: 4px solid #9d0a0e; */
+    overflow: hidden;
+}
+
+.cards_block{
+    position: relative;
+    width: 1340px;
+    margin: auto;
+    background-color: "#ebebe6";
+    z-index: 2;
+    margin-top: 50px;
+
+}
+
+.card_img{
+    height: 100%;
+    width: auto;
+}
+
+.card_img_box{
+    transition: 0.2s linear;
+}
+.card_mask{
+    position: absolute;
+    pointer-events: none;
+    height: 50%;
+    transform: translateY(100%);
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+.card_img_box:hover{
+    scale: 1.03;
+}
+.card_inner{
+    pointer-events: none;
+
+    display: flex;
+    flex-direction: column;
+    padding: 25px 30px 25px 30px;
+    justify-content: end;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.card_text{
+    font-family: 'DIN-bold';
+    color: white;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.11538;
+}
+
+.owlin_inner{
+    position: absolute;
+    padding-top: 75px;
+    padding-left: 80px;
+    color: white;
+    width: 580px;
+
+}
+.owlin_inner p{
+    margin-bottom: 20px;
+}
+
+.owlin_header{
+    font-family: 'DIN-bold';
+    font-size: 52px;
+    line-height: 1;
+    height: 104px;
+    margin-bottom: 20px;
+}
+.owlin_maint_text{
+    font-family: 'DIN';
+    font-size: 21px;
+}
+
+.news_bg{
+    width: 100vw;
+}
+
+.news_inner{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    position: absolute;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+.news{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.news_label{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    margin-top: 50px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+    font-size: clamp(26px,2.625vw,42px);
+    line-height: 1.02381;
+    font-weight: 600;
+    font-family: 'DIN-bold';
+    color: white;
+    text-align: center;
+}
+.news_desription{
+    margin-top: 10px;
+    position: relative;
+    margin: auto;
+    font-family: 'DIN';
+    font-size: 21px;
+    text-align: center;
+    color: white;
+}
+
+.cards_label_grid{
+    background-color: #ebebe6;
+    overflow: hidden;
+}
+
+.bg_picture{
+    position: absolute;
+    z-index: 1;
+}
+
+h1.label{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    font-size: clamp(26px,2.625vw,42px);
+    line-height: 1.02381;
+    font-weight: 600;
+    font-family: 'DIN-bold';
+}
+
+.slide_wrapper{
+    position: absolute;
+    width: 100%;
+    color: white;
+    font-family: 'DIN';
+    font-size: 21px;
+
+}
+.slide_content{
+    position: relative;
+    margin: auto;
+    margin-top: 121px;
+    width: 1340px;
+    /* padding: 20px; */
+}
+
+.first_slide_description{
+    margin-top: 20px;
+    width: 500px;
+
+}
+
+.begin_your_adventure_block{
+    width: 100%;
+    margin-top: 100px;
+}
+
+
+.footer_cont{
+    width: 1240px;
+    margin: auto;
+    background-color: black;
+
+}
+
+.policy{
+    padding: 15px;
+    font-size: 12px;
+    text-align: center;
+    background-color: black;
+    color: #989898;
+}
+.doc_item{
+    display: inline;
+    color: white;
+}
+.doc_links_part{
+    background-color: #242424;
+}
+
+.doc_links_part ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+footer{
+    position: relative;
+    background-color: black;
+
+}
+
+.owlin_img{
+    width: 100%;
+    height: auto;
+}
+
+.first_slide_lbl{
+    font-weight: 600;
+    font-family: 'DIN-bold';
+    font-size: clamp(32px,4.5vw,72px);
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');
+  }
+
+@font-face {
+    font-family: "DIN";
+    src: url("src/fonts/DIN Next LT Pro Regular.woff2");
+}
+
+@font-face {
+    font-family: "DIN-bold";
+    src: url("src/fonts/DIN Next LT Pro Bold.woff2");
+}
